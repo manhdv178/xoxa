@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/ginora-sans');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url("../src/assets/images/background/bg.png");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.inputStyle {
+  width: 48px !important;
+  height: 64px;
+  border-bottom: 1px solid #2980D0;
+  margin-left: 8px;
+  margin-right: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 20px;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.customTitle {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFF;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 94px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #454D58;
+  opacity: 10%;
+}
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
